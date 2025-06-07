@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+       /* Inline CSS for email compatibility */
+       body {
+           font-family: 'Century Gothic', Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #f6f6f6;
+           color: #333;
+       }
+       .email-container {
+           max-width: 600px;
+           margin: 20px auto;
+           background-color: #fff;
+           border: 1px solid #ddd;
+           border-radius: 5px;
+       }
+       .header {
+           background-color: #19387f; /* Header color */
+           color: #fff;
+           padding: 20px;
+           text-align: center;
+           border-radius: 5px 5px 0 0;
+       }
+       .header img {
+           max-height: 40px;
+       }
+       .content {
+           padding: 20px;
+           text-align: left; /* Left-aligned content */
+       }
+       .content h1 {
+           font-size: 20px;
+           margin-bottom: 15px;
+       }
+       .content p {
+           font-size: 14px;
+           line-height: 1.6;
+           margin: 10px 0;
+       }
+       .button {
+           display: inline-block;
+           padding: 10px 15px;
+           margin: 10px 0;
+           background-color: #19387f;
+           color: #fff;
+           text-decoration: none;
+           border-radius: 5px;
+           font-size: 14px;
+       }
+       .footer {
+           text-align: center;
+           padding: 10px;
+           font-size: 12px;
+           color: #666;
+       }
+   </style>
+   <title>Welcome to {{company_name}}</title>
+</head>
+<body>
+   <div class="email-container">
+       <!-- Header -->
+       <div class="header">
+           <h1>{{company_name}}</h1>
+       </div>
+
+       <!-- Content -->
+       <div class="content">
+           <h1>Welcome to {{company_name}}!</h1>
+           <p>Dear {{user_name}},</p>
+           <p>Thank you for registering with {{company_name}}! Your account has been successfully created, and you are now part of our community.</p>
+           <p>To help you get started, here is your default password and a link to proceed with your first login:</p>
+           <p><strong>Default Password:</strong> {{password}}</p>
+           <p><strong>Login Link:</strong> <a href="{{login_link}}" class="button" style="color: #fff">Login Here</a></p>
+           <p>We recommend changing your password after your first login for enhanced security. You can update your password by navigating to the settings section within your dashboard.</p>
+
+           <h2>What’s next?</h2>
+           <ul>
+               <li>Click the login link above to sign into your account.</li>
+               <li>After logging in, take a moment to explore the platform and familiarize yourself with our features.</li>
+               <li>If you need assistance, feel free to reach out to our support team at <a href="mailto:{{support_email}}">{{support_email}}</a>.</li>
+           </ul>
+
+           <h3>Need help?</h3>
+           <p>For any questions or support, don’t hesitate to contact us at <a href="mailto:{{support_email}}">{{support_email}}</a> or visit our help center: <a href="{{help_center}}">{{help_center}}</a>.</p>
+           <p>We’re excited to have you on board and look forward to supporting your journey with us!</p>
+       </div>
+
+       <!-- Footer -->
+       <div class="footer">
+           <p>Best regards,</p>
+           <p>The {{company_name}} Team</p>
+           <p><a href="{{company_website}}">{{company_website}}</a> | <a href="mailto:{{support_email}}">{{support_email}}</a> | {{contact_number}}</p>
+       </div>
+   </div>
+</body>
+</html>
