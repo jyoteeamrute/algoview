@@ -4,6 +4,8 @@ venv
 Backend/.venv/
 
 /Backend/main/migrations/
+# Ignore collected static files
+Backend/staticfiles/
 
 __pycache__
 /__pycache__
